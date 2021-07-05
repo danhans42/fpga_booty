@@ -1,10 +1,9 @@
 # fpga_booty
-
+An simple experiment/concept to see how well a PS1/PS-X can boot from an FPGA/CPLD with minimal connections.
 ![Alt text](/images/IMG_20210705_152344__022.jpg?raw=true "Schematic")
 
 ### Say What?
 
-An simple experiment/concept to see how well a PS1/PS-X can boot from an FPGA/CPLD with minimal connections.
 The PS-X/PS1 can boot from Expansion - whether there is a expansion socket or not. Usually this is done by an EEPROM & some PLD (like in the Xplorer/AR/GS).
 EEPROMs need a fair amount of wiring (32 to be exact for 512k).
 
@@ -12,10 +11,9 @@ The idea is, rather than an EEPROM we use a CPLD/FPGA to give the PS-X the data 
 
 ### Why?
 
-Doing some development/homebrewing on a PS1 currently requires either a boot disc or a memory card to load unirom or some serial client. The idea is a small FPGA can be used to boot from on these consoles with just 12 wires (8 Data, /RD, CS0, GND & VCC) which requires a considerable amount of less wiring than an EEPROM.
+Doing some development/homebrewing on a PSone currently requires either a boot disc or a memory card to load unirom or some serial client which isnt the fastest. The idea here is a small FPGA can be used to boot from on these consoles with just 12 wires (8 Data, /RD, CS0, GND & VCC) which requires a considerable amount of less wiring than an EEPROM.
 
 The original idea/concept was by Nicolas Noble. I kind of understood it and used it as the basis for a simple FPGA project. He has been kind enough to help with the Playstation software whilst I kind of fool around in Quartus trying to bring this to life.
-
 
 ### How?
 
