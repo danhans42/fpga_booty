@@ -31,6 +31,13 @@ The EP2C5 Mini Board can be obtained cheaply from eBay/Aliexpress/Amazon for aro
 
 Once we have everything working 100%, hopefully can look at moving this to other cheaper FPGA/CPLD boards
 
+### What do I need to get started?
+
+Some FPGA board - if you want to use the stuff I have written stick with a EP2C5 Mini Board
+
+A PlayStation - This was built with the PSone user in mind - however you can use this on a Full Fat PSX too. A 5552 PAL unit was used for development, however it should run on any model.
+
+Something to connect it up - Jumper wires or whatever. Buy quality and keep them nice and short or you will have issues probably.
 
 ### Does it work?
 
