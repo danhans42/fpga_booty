@@ -1,5 +1,7 @@
 # fpga_booty
+
 An simple experiment/concept to see how well a PS1/PS-X can boot from an FPGA/CPLD with minimal connections.
+
 ![Alt text](/images/IMG_20210705_152344__022.jpg?raw=true "Schematic")
 
 ### Say What?
