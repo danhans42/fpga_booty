@@ -1,8 +1,8 @@
 # fpga_booty
 
-###What?
+### Say What?
 
-An simple experiment to see how well a PS1/PS-X can boot from an FPGA/CPLD with minimal connections.
+An simple experiment/concept to see how well a PS1/PS-X can boot from an FPGA/CPLD with minimal connections.
 The PS-X/PS1 can boot from Expansion - whether there is a expansion socket or not. Usually this is done by an EEPROM & some PLD (like in the Xplorer/AR/GS).
 EEPROMs need a fair amount of wiring (32 to be exact for 512k).
 
@@ -29,7 +29,17 @@ The EP2C5 Mini Board can be obtained cheaply from eBay/Aliexpress/Amazon for aro
 
 Once we have everything working 100%, hopefully can look at moving this to other cheaper FPGA/CPLD boards
 
+
+### Does it work?
+
+Yeah kinda, ish :) See here for an earlier version on a different board:-
+[![Action Video](https://img.youtube.com/vi/7CAtqHSnnSg/0.jpg)](https://www.youtube.com/watch?v=7CAtqHSnnSg)
+
 ### Current Schematic
 
-
 ![Alt text](/images/schematic.png?raw=true "Schematic")
+
+### Future Improvements
+
+After the boot code has been read completely from the FPGA it essentially ignores future read requests (shows as open bus). Ideally some logic will be switched in that handles something like communication or otherwise. Lets see.
+
