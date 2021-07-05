@@ -32,7 +32,7 @@ Once we have everything working 100%, hopefully can look at moving this to other
 
 ### Does it work?
 
-Yeah kinda, ish :) See here for an earlier version on a different board:-
+Yeah kinda, ish :) See youtube video below for an earlier version on a different board:-
 
 [![Action Video](https://img.youtube.com/vi/7CAtqHSnnSg/0.jpg)](https://www.youtube.com/watch?v=7CAtqHSnnSg)
 
