@@ -13,7 +13,7 @@ The idea is, rather than an EEPROM we use a CPLD/FPGA to give the PS-X the data 
 
 ### Why?
 
-Doing some development/homebrewing on a PSone currently requires either a boot disc or a memory card to load unirom or some serial client which isnt the fastest. The idea here is a small FPGA can be used to boot from on these consoles with just 12 wires (8 Data, /RD, CS0, GND & VCC) which requires a considerable amount of less wiring than an EEPROM.
+Doing some development/homebrewing on a PSone currently requires either a boot disc or a memory card to load unirom or some serial client which isnt the fastest. The idea here is a small FPGA can be used to boot from on these consoles with just 13 wires (8 Data, /RD, /CS0, /RESET, GND & VCC) - which requires a considerable amount of less wiring than an EEPROM and not much more than an old skool modchip really.
 
 The original idea/concept was by Nicolas Noble. I kind of understood it and used it as the basis for a simple FPGA project. He has been kind enough to help with the Playstation software whilst I kind of fool around in Quartus trying to bring this to life.
 
