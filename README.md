@@ -2,6 +2,10 @@
 
 An simple experiment/concept to see how well a PS1/PS-X can boot from an FPGA/CPLD with minimal connections.
 
+There will be no further updates to this project. It was a test to check how something worked. Feel free to use it/change/modify it.
+
+If you find it useful let me know :)
+
 ![Alt text](/images/IMG_20210705_152344__022.jpg?raw=true "Schematic")
 
 ### Say What?
