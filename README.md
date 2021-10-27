@@ -45,7 +45,9 @@ Yeah kinda, ish :) See youtube video below for an earlier version on a different
 
 [![Action Video](https://img.youtube.com/vi/7CAtqHSnnSg/0.jpg)](https://www.youtube.com/watch?v=7CAtqHSnnSg)
 
-Currently trapping errors from a power on boot. Current attempt works correctly after 1 successive boot to the BIOS. After this you can restart to the code on the FPGA - work on this is ongoing
+Currently trapping errors from a power on boot. Current attempt works correctly after 1 successive boot to the BIOS. After this you can restart to the code on the FPGA.
+
+The project in this repo requires Quartus 13.0sp1 - do not use a newer version as it might not support the FPGA used.
 
 ### Future Improvements
 
