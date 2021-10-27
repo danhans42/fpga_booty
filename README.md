@@ -1,4 +1,4 @@
-# fpga_booty
+# fpga_booty - PlayStation Expansion Boot with FPGA
 
 An simple experiment/concept to see how well a Sony PlayStation can boot from an FPGA/CPLD with minimal connections.
 
