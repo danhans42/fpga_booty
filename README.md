@@ -1,6 +1,6 @@
 # fpga_booty
 
-An simple experiment/concept to see how well a PS1/PS-X can boot from an FPGA/CPLD with minimal connections.
+An simple experiment/concept to see how well a Sony PlayStation can boot from an FPGA/CPLD with minimal connections.
 
 There will be no further updates to this project. It was a test to check how something worked. Feel free to use it/change/modify it.
 
@@ -10,7 +10,7 @@ If you find it useful let me know :)
 
 ### Say What?
 
-The PS-X/PS1 can boot from Expansion - whether there is a expansion socket or not. Usually this is done by an EEPROM & some PLD (like in the Xplorer/AR/GS).
+The PS-X/PS1 can boot from its expansion port - whether there is a expansion socket or not. Usually this is done by an EEPROM & some PLD (like in the Xplorer/AR/GS).
 EEPROMs need a fair amount of wiring (32 to be exact for 512k).
 
 The idea is, rather than an EEPROM we use a CPLD/FPGA to give the PS-X the data it expects, without the need for address lines.
@@ -42,7 +42,7 @@ Once we have everything working 100%, hopefully can look at moving this to other
 - A PlayStation - This was built with the PSone user in mind - however you can use this on a Full Fat PSX too. A 5552 PAL unit was used for development, however it should run on any model.
 
 Something to connect it up - Jumper wires or whatever. Buy quality and keep them nice and short or you will have issues probably.
-
+I used the PIO-Breakout from the pcsx-redux project (see https://github.com/grumpycoders/pcsx-redux/tree/main/hardware/PIO-Breakout )
 ### Does it work?
 
 Yeah kinda, ish :) See youtube video below for an earlier version on a different board:-
@@ -59,7 +59,7 @@ After the boot code has been read completely from the FPGA it essentially ignore
 
 ### Credit / Licence etc
 
-Maany thanks to all in #psxdev discord for my mutterings and dumb questions - Nicolas Noble in particular who without this project wouldnt have happened. Bradlin for freepsxboot and also Sicklebrick for Unirom! Big shouts to all the usual suspects
+Maany thanks to all in #psxdev discord for my mutterings and dumb questions - Nicolas Noble in particular who without this project wouldnt have happened - his idea and concept I just merely interpreted it. Bradlin for freepsxboot (we use fastboot here) and also Sicklebrick for Unirom! 
 
 The code contained in this repo is for personal, non-commercial use only. If you bought on eBay - you got shafted!
 
