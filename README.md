@@ -59,7 +59,7 @@ After the boot code has been read completely from the FPGA it essentially ignore
 
 ### Credit / Licence etc
 
-Maany thanks to all in #psxdev discord for my mutterings and dumb questions - Nicolas Noble in particular who without this project wouldnt have happened - his idea and concept I just merely interpreted it. Bradlin for freepsxboot (we use fastboot here) and also Sicklebrick for Unirom! 
+Maany thanks to all in psx.dev discord (http://psx.dev/ for my mutterings and dumb questions - Nicolas Noble in particular who without this project wouldnt have happened - his idea and concept I just merely interpreted it. Bradlin for freepsxboot (we use fastboot here) and also Sicklebrick for Unirom! 
 
 The code contained in this repo is for personal, non-commercial use only. If you bought on eBay - you got shafted!
 
