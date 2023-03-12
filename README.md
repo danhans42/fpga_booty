@@ -53,6 +53,8 @@ Currently trapping errors from a power on boot. Current attempt works correctly 
 
 The project in this repo requires Quartus 13.0sp1 - do not use a newer version as it might not support the FPGA used.
 
+Update:Mar 2023. Support for creation of a booty bytestream is now supported by the ps1-packer tool by Nicolas Noble. It is part of the pcsx-redux repository and can be found here: https://github.com/grumpycoders/pcsx-redux/tree/main/tools/ps1-packer By providing the -booty switch ps1-packer will compress and output a .BIN file that can be used to boot that code using this method. You will need to convert the resulting BIN file to an SREC, and then amend the storage element in the FPGA design to use it.
+
 ### Future Improvements
 
 After the boot code has been read completely from the FPGA it essentially ignores future read requests (shows as open bus). Ideally some logic will be switched in that handles something like communication or otherwise. Lets see.
