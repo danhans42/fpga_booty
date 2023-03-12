@@ -53,7 +53,30 @@ Currently trapping errors from a power on boot. Current attempt works correctly 
 
 The project in this repo requires Quartus 13.0sp1 - do not use a newer version as it might not support the FPGA used.
 
-Update:Mar 2023. Support for creation of a booty bytestream is now supported by the ps1-packer tool by Nicolas Noble. It is part of the pcsx-redux repository and can be found here: https://github.com/grumpycoders/pcsx-redux/tree/main/tools/ps1-packer By providing the -booty switch ps1-packer will compress and output a .BIN file that can be used to boot that code using this method. You will need to convert the resulting BIN file to an SREC, and then amend the storage element in the FPGA design to use it.
+Update:Mar 2023. Support for creation of a booty bytestream is now supported by the ps1-packer tool by Nicolas Noble. It is part of the pcsx-redux repository and can be found here: https://github.com/grumpycoders/pcsx-redux/tree/main/tools/ps1-packer By providing the -booty switch ps1-packer will compress and output a .BIN file that can be used to boot that code using this method. 
+
+example 
+
+<pre>C:\Users\danhans42\psxpong\>ps1-packer psxpong.ps-exe -booty -o booty_out.bin
+
+ps1-packer by Nicolas "Pixel" Noble
+https://github.com/grumpycoders/pcsx-redux/tree/main/tools/ps1-packer/
+
+Input file: psxpong.ps-exe
+pc: 0x80010000  gp: 0x00000000  sp: 0x801fff00
+bss: 0@0x00000000
+code size: 18432 -> 6420
+loading address: 0x80013083
+inplace decompression: yes
+booty bytestream: yes
+
+new pc: 0x80014964
+File booty_out.bin created. All done.
+</pre>
+
+You will need to convert the resulting BIN file to an SREC, and then amend the storage element in the FPGA design to use it.
+
+Maximum file size will depend on the fpga you are using. EP2C4 for example is limited to about 8KB.
 
 ### Future Improvements
 
